@@ -13,13 +13,12 @@ namespace ByteBank
         {
             try
             {
-                Metodo();
+                ContaCorrente con = new ContaCorrente(0, 0);
             }
-            catch (Exception excecao)
+            catch (ArgumentException excecao)
             {
                 Console.WriteLine(excecao.Message);
-                Console.WriteLine(excecao.StackTrace);
-                Console.WriteLine("Aconteceu um erro!");
+                Console.WriteLine(excecao.ParamName);
             }
 
             Console.ReadLine();
