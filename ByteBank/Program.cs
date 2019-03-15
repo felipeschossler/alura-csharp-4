@@ -13,7 +13,7 @@ namespace ByteBank
         {
             try
             {
-                ContaCorrente con = new ContaCorrente(0, 0);
+                ContaCorrente con = new ContaCorrente(200, 200334);
             }
             catch (ArgumentException excecao)
             {
